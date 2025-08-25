@@ -29,7 +29,7 @@ Thank you for your interest in contributing to the ADCE (Appetite-Driven Context
 
 ### 1. Fork & Clone
 ```bash
-git clone https://github.com/yourusername/adce-framework.git
+git clone https://github.com/jamalcodez/adce-framework.git
 cd adce-framework
 npm install
 ```

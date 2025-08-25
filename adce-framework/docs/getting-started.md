@@ -23,5 +23,5 @@ Use deployer to package and deploy user-dashboard
 What’s Next?
 	•	Read ADCE Methodology
 	•	Explore Examples
-	•	Join the community: https://github.com/yourusername/adce-framework/discussions
+	•	Join the community: https://github.com/jamalcodez/adce-framework/discussions
 
