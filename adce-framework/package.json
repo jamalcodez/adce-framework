@@ -1,0 +1,61 @@
+{
+  "name": "adce-framework",
+  "version": "1.0.0",
+  "description": "Appetite-Driven Context Engineering framework for AI-first development",
+  "main": "install.js",
+  "bin": {
+    "adce": "./tools/cli.js",
+    "adce-install": "./install.js"
+  },
+  "scripts": {
+    "install-framework": "node install.js",
+    "setup-project": "node tools/setup-project.js",
+    "validate-agents": "node tools/validate-agents.js",
+    "test": "npm run validate-agents",
+    "update": "git pull && npm run setup-project"
+  },
+  "keywords": [
+    "ai-development",
+    "claude-code",
+    "shape-up",
+    "prp",
+    "context-engineering",
+    "subagents",
+    "product-development",
+    "agile",
+    "saas",
+    "framework"
+  ],
+  "author": "Jamal Freeman <jamalcodez@github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamalcodez/adce-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamalcodez/adce-framework/issues"
+  },
+  "homepage": "https://github.com/jamalcodez/adce-framework#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.4",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "files": [
+    "agents/",
+    "templates/",
+    "examples/",
+    "tools/",
+    "scripts/",
+    "docs/",
+    "install.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
