@@ -18,9 +18,19 @@ ADCE combines the best of three methodologies:
 
 ## Quick Start
 
-### 1. Install in Your Project
+### 1. Install the Framework
 ```bash
+# Global installation (recommended)
+npm install -g adce-framework
+adce install
+
+# Or local installation
+npm install adce-framework
 npx adce-framework install
+```
+
+### 2. Start Your First Cycle
+```bash
 # Create a pitch from your idea
 "Use shaper to create a pitch for: [your broad idea]"
 
