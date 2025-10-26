@@ -20,30 +20,40 @@ ADCE combines the best of three methodologies:
 
 ### 1. Install in Your Project
 ```bash
-npx adce-framework install
+npx adce-framework
+```
+
+This will install ADCE agents and templates into your project.
+
+### 2. Start Using ADCE Agents
+```bash
 # Create a pitch from your idea
 "Use shaper to create a pitch for: [your broad idea]"
 
-# Review technical feasibility  
+# Review technical feasibility
 "Use architect to review this pitch for feasibility"
+
+# Break into specific tasks (for complex features)
+"Use planner to break down the API PRP into implementation tasks"
 
 # Start building
 "Use builder to implement dashboard components"
 "Use deployer to set up production deployment"
-Why ADCE Works
-❌ Traditional Problems:
+```
 
-Vague prompts → unusable AI output
-No scope discipline → endless iteration
-Context loss → repeated explanations
-No systematic approach → inconsistent results
+## Why ADCE Works
 
-✅ ADCE Solutions:
+### ❌ Traditional Problems:
+- Vague prompts → unusable AI output
+- No scope discipline → endless iteration
+- Context loss → repeated explanations
+- No systematic approach → inconsistent results
 
-Systematic refinement: Ideas → working software
-Appetite constraints: Prevent scope creep
-Context engineering: Enable AI first-pass success
-Specialized agents: Domain expertise + consistency
+### ✅ ADCE Solutions:
+- Systematic refinement: Ideas → working software
+- Appetite constraints: Prevent scope creep
+- Context engineering: Enable AI first-pass success
+- Specialized agents: Domain expertise + consistency
 
 ## The Five Core Agents
 🎯 **shaper** - Turns broad ideas into appetite-bounded pitches with comprehensive context
@@ -55,29 +65,39 @@ Specialized agents: Domain expertise + consistency
 🎨 **builder** - Handles UI/UX design and frontend development within constraints
 
 🚀 **deployer** - Gets features safely to production and maintains system reliability
-Real Results
-Finance Dashboard: "Users want better financial insights" → Working dashboard with spending breakdown in 1.5 weeks (AI-accelerated)
-User Onboarding: "Reduce new user confusion" → Progressive onboarding flow reducing churn 67% in 1 week (AI-accelerated)
-Documentation
 
-Getting Started: Your first ADCE cycle
-Complete Methodology: Full framework documentation
-Real Examples: Complete workflow walkthroughs
-Agent Specifications: Detailed agent docs
+## Real Results
 
-Requirements
+**Finance Dashboard**: "Users want better financial insights" → Working dashboard with spending breakdown in 1.5 weeks (AI-accelerated)
 
-Claude Code (latest version)
-Node.js 18+
-Git
+**User Onboarding**: "Reduce new user confusion" → Progressive onboarding flow reducing churn 67% in 1 week (AI-accelerated)
 
-Community
+## Documentation
 
-GitHub Discussions: Framework Q&A
-Discord Server: Real-time help and community
+- **Getting Started**: Your first ADCE cycle
+- **Complete Methodology**: Full framework documentation
+- **Real Examples**: Complete workflow walkthroughs
+- **Agent Specifications**: Detailed agent docs
 
-Contributing
+## Requirements
+
+- Claude Code (latest version)
+- Node.js 18+
+- Git
+
+## Community
+
+- **GitHub Discussions**: Framework Q&A
+- **Discord Server**: Real-time help and community
+
+## Contributing
+
 We welcome contributions! See CONTRIBUTING.md for guidelines.
-License
+
+## License
+
 MIT License - see LICENSE for details.
-Turn your broad ideas into working software with predictable timeframes.
+
+---
+
+**Turn your broad ideas into working software with predictable timeframes.**

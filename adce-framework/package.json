@@ -4,8 +4,7 @@
   "description": "Appetite-Driven Context Engineering framework for AI-first development",
   "main": "install.js",
   "bin": {
-    "adce": "./tools/cli.js",
-    "adce-install": "./install.js"
+    "adce-framework": "./install.js"
   },
   "scripts": {
     "install-framework": "node install.js",
