@@ -45,15 +45,16 @@ Appetite constraints: Prevent scope creep
 Context engineering: Enable AI first-pass success
 Specialized agents: Domain expertise + consistency
 
-The Four Core Agents
-🎯 shaper
-Turns broad ideas into appetite-bounded pitches with comprehensive context
-🏗️ architect
-Manages technical implementation, architecture decisions, and scope within appetite
-🎨 builder
-Handles UI/UX design and frontend development within constraints
-🚀 deployer
-Gets features safely to production and maintains system reliability
+## The Five Core Agents
+🎯 **shaper** - Turns broad ideas into appetite-bounded pitches with comprehensive context
+
+🏗️ **architect** - Manages technical implementation, architecture decisions, and scope within appetite
+
+📋 **planner** - Breaks PRPs into specific, dependency-aware tasks for complex features (optional)
+
+🎨 **builder** - Handles UI/UX design and frontend development within constraints
+
+🚀 **deployer** - Gets features safely to production and maintains system reliability
 Real Results
 Finance Dashboard: "Users want better financial insights" → Working dashboard with spending breakdown in 1.5 weeks (AI-accelerated)
 User Onboarding: "Reduce new user confusion" → Progressive onboarding flow reducing churn 67% in 1 week (AI-accelerated)

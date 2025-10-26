@@ -68,20 +68,58 @@
 
 **Agent**: `architect` - Technical leadership and scope management
 
-### Phase 3: Implementation (Within AI-Accelerated Appetite)
+### Phase 3: Task Planning (1-2 hours per PRP) - OPTIONAL
+**Goal**: Break PRPs into specific, sequential, dependency-aware implementation tasks
+
+**When to use**:
+- Complex features (1-2 week or 2-3 week appetite)
+- Features with many integration points or dependencies
+- Work involving multiple developers or AI sessions
+- High-risk technical work requiring systematic execution
+- Onboarding new team members to the codebase
+
+**When to skip**:
+- Simple features (1-3 day appetite, straightforward implementation)
+- Well-understood patterns (e.g., another CRUD endpoint)
+- Solo developer comfortable working from PRPs directly
+- Emergency fixes requiring immediate action
+
+**Process**:
+1. **Task Decomposition**: Break PRP goal into 5-15 specific, actionable tasks (1-4 hours each)
+2. **Dependency Mapping**: Identify which tasks depend on others, create dependency graph
+3. **Time Allocation**: Estimate realistic time per task, ensure total ≤ appetite
+4. **Verification Planning**: Define concrete pass/fail criteria for each task
+5. **Circuit Breaker Preparation**: Mark tasks as P1 (must have), P2 (should have), P3 (nice to have)
+
+**Output**: Task plan with specific execution steps, dependency graph, time estimates, and verification criteria
+
+**Agent**: `planner` - Transforms PRPs into granular, executable task breakdowns
+
+**Benefits**:
+- **Systematic execution**: Clear step-by-step path from start to finish
+- **Better AI results**: Specific tasks → specific prompts → better code
+- **Parallel work**: Multiple developers can work on independent tasks
+- **Progress tracking**: Know exactly where you are (7/12 tasks = 58% done)
+- **Early risk detection**: If Task 3 takes 2x estimate, trigger circuit breaker
+- **Clearer handoffs**: Easy to delegate or resume work later
+
+### Phase 4: Implementation (Within AI-Accelerated Appetite)
 **Goal**: Build features within compressed appetite constraints using AI-first development
 
 **Process**:
-1. **PRP Execution**: Implement using comprehensive context
-2. **Progress Tracking**: Hill charts, not task completion
-3. **Circuit Breakers**: Cut scope when appetite threatened
+1. **PRP or Task Execution**: Implement using comprehensive context (from PRPs or task plans)
+2. **Progress Tracking**: Hill charts for PRPs, or task completion for task plans
+3. **Circuit Breakers**: Cut scope when appetite threatened (easier with task plans)
 4. **Continuous Validation**: Prove it works at each step
 
 **Output**: Working software that delivers user value
 
 **Agents**: `builder` (UI/frontend) and `deployer` (infrastructure/backend)
 
-### Phase 4: Integration & Validation
+**With Task Planning**: Execute tasks sequentially based on dependencies, mark complete with verification
+**Without Task Planning**: Work from PRP directly, track progress via hill chart
+
+### Phase 5: Integration & Validation
 **Goal**: Ensure everything works together and delivers promised value
 
 **Process**:

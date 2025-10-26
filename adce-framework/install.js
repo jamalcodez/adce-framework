@@ -76,7 +76,7 @@ class ADCEInstaller {
     const agentsDir = path.join(this.projectRoot, '.claude', 'agents');
     await fs.ensureDir(agentsDir);
     
-    const agentFiles = ['shaper.md', 'architect.md', 'builder.md', 'deployer.md'];
+    const agentFiles = ['shaper.md', 'architect.md', 'planner.md', 'builder.md', 'deployer.md'];
 
     for (const file of agentFiles) {
       const source = path.join(this.frameworkRoot, 'agents', file);
@@ -135,10 +135,19 @@ npm run build
 \`\`\`
 
 ## ADCE Workflow
+
+### Standard Flow (Simple Features)
 1. Use shaper to create appetite-bounded pitches
 2. Use architect to review feasibility and create PRPs
 3. Use builder and deployer to implement features
-4. Track progress with hill charts, not task completion
+4. Track progress with hill charts
+
+### Extended Flow (Complex Features)
+1. Use shaper to create appetite-bounded pitches
+2. Use architect to review feasibility and create PRPs
+3. Use planner to break PRPs into specific tasks (optional)
+4. Use builder and deployer to execute tasks
+5. Track progress with task completion
 `;
       await fs.writeFile(claudeMd, template);
       console.log(chalk.green('   ✓ Created CLAUDE.md'));
