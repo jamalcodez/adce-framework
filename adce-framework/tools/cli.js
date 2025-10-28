@@ -185,7 +185,7 @@ npm run build   # Build for production
     console.log('  adce install');
     console.log('  adce status');
     console.log('  adce validate-agents\n');
-    console.log('Visit https://github.com/yourusername/adce-framework for documentation');
+    console.log('Visit https://github.com/jamalcodez/adce-framework for documentation');
   }
 }
 

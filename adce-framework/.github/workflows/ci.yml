@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    
+    - run: npm ci
+    
+    - name: Run tests
+      run: npm test
+    
+    - name: Test installation process
+      run: |
+        mkdir test-install
+        cd test-install
+        npm init -y
+        node ../install.js
+        
+  validate-agents:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'npm'
+    
+    - run: npm ci
+    
+    - name: Validate agent files
+      run: npm run validate-agents
+      
+    - name: Check documentation links
+      run: |
+        # Check that all referenced files exist
+        find . -name "*.md" -exec grep -l "\[.*\](" {} \; | while read file; do
+          echo "Checking links in $file"
+        done

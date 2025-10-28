@@ -18,65 +18,114 @@ ADCE combines the best of three methodologies:
 
 ## Quick Start
 
-### 1. Install in Your Project
+> **Note**: ADCE provides agents that run INSIDE Claude Code. You need Claude Code installed first.
+
+### 1. Install the Framework
+
+**After npm publication** (coming soon):
 ```bash
+# Global installation (recommended)
+npm install -g adce-framework
+adce-framework install
+
+# Or use directly
 npx adce-framework install
-# Create a pitch from your idea
+```
+
+**Current installation** (before npm publication):
+```bash
+# Clone and run installer
+git clone https://github.com/jamalcodez/adce-framework.git
+cd adce-framework/adce-framework
+npm install
+cd /path/to/your/project
+node /path/to/adce-framework/adce-framework/install.js
+```
+
+Or **manual installation** (quickest):
+```bash
+# Copy agents to your project
+mkdir -p .claude/agents
+cp /path/to/adce-framework/adce-framework/agents/*.md .claude/agents/
+```
+
+See [INSTALL.md](INSTALL.md) for detailed installation instructions.
+
+### 2. Start Your First Cycle
+```bash
+# 1. Create a pitch from your idea
 "Use shaper to create a pitch for: [your broad idea]"
 
-# Review technical feasibility  
+# 2. Review technical feasibility
 "Use architect to review this pitch for feasibility"
 
-# Start building
-"Use builder to implement dashboard components"
+# 3. Break into specific tasks
+"Use planner to break down the PRP into implementation tasks"
+
+# 4. Start building
+"Use builder to implement the first task from the plan"
 "Use deployer to set up production deployment"
-Why ADCE Works
-❌ Traditional Problems:
+```
 
-Vague prompts → unusable AI output
-No scope discipline → endless iteration
-Context loss → repeated explanations
-No systematic approach → inconsistent results
+**Note**: For very simple features (single file, <2 hour tasks), you may skip step 3 (planner) and go directly from architect to builder/deployer.
 
-✅ ADCE Solutions:
+## Why ADCE Works
 
-Systematic refinement: Ideas → working software
-Appetite constraints: Prevent scope creep
-Context engineering: Enable AI first-pass success
-Specialized agents: Domain expertise + consistency
+### ❌ Traditional Problems:
+- Vague prompts → unusable AI output
+- No scope discipline → endless iteration
+- Context loss → repeated explanations
+- No systematic approach → inconsistent results
 
-The Four Core Agents
-🎯 shaper
-Turns broad ideas into appetite-bounded pitches with comprehensive context
-🏗️ architect
-Manages technical implementation, architecture decisions, and scope within appetite
-🎨 builder
-Handles UI/UX design and frontend development within constraints
-🚀 deployer
-Gets features safely to production and maintains system reliability
-Real Results
-Finance Dashboard: "Users want better financial insights" → Working dashboard with spending breakdown in 1.5 weeks (AI-accelerated)
-User Onboarding: "Reduce new user confusion" → Progressive onboarding flow reducing churn 67% in 1 week (AI-accelerated)
-Documentation
+### ✅ ADCE Solutions:
+- Systematic refinement: Ideas → working software
+- Appetite constraints: Prevent scope creep
+- Context engineering: Enable AI first-pass success
+- Specialized agents: Domain expertise + consistency
 
-Getting Started: Your first ADCE cycle
-Complete Methodology: Full framework documentation
-Real Examples: Complete workflow walkthroughs
-Agent Specifications: Detailed agent docs
+## The Five Core Agents
+🎯 **shaper** - Turns broad ideas into appetite-bounded pitches with comprehensive context
 
-Requirements
+🏗️ **architect** - Manages technical implementation, architecture decisions, and scope within appetite
 
-Claude Code (latest version)
-Node.js 18+
-Git
+📋 **planner** - Breaks PRPs into specific, dependency-aware tasks for complex features (optional)
 
-Community
+🎨 **builder** - Handles UI/UX design and frontend development within constraints
 
-GitHub Discussions: Framework Q&A
-Discord Server: Real-time help and community
+🚀 **deployer** - Gets features safely to production and maintains system reliability
 
-Contributing
+## Real Results
+
+**Finance Dashboard**: "Users want better financial insights" → Working dashboard with spending breakdown in 1.5 weeks (AI-accelerated)
+
+**User Onboarding**: "Reduce new user confusion" → Progressive onboarding flow reducing churn 67% in 1 week (AI-accelerated)
+
+## Documentation
+
+- **Getting Started**: Your first ADCE cycle
+- **Complete Methodology**: Full framework documentation
+- **Real Examples**: Complete workflow walkthroughs
+- **Agent Specifications**: Detailed agent docs
+
+## Requirements
+
+- Claude Code (latest version)
+- Node.js 18+
+- Git
+
+## Community
+
+- **GitHub Discussions**: Framework Q&A
+- **Discord Server**: Real-time help and community
+
+## Contributing
+
 We welcome contributions! See CONTRIBUTING.md for guidelines.
-License
+
+## License
+
 MIT License - see LICENSE for details.
-Turn your broad ideas into working software with predictable timeframes.
+
+---
+
+**Turn your broad ideas into working software with predictable timeframes.**

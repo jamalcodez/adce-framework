@@ -76,7 +76,7 @@ class ADCEInstaller {
     const agentsDir = path.join(this.projectRoot, '.claude', 'agents');
     await fs.ensureDir(agentsDir);
     
-    const agentFiles = ['shaper.md', 'architect.md', 'builder.md', 'deployer.md'];
+    const agentFiles = ['shaper.md', 'architect.md', 'planner.md', 'builder.md', 'deployer.md'];
 
     for (const file of agentFiles) {
       const source = path.join(this.frameworkRoot, 'agents', file);
@@ -135,10 +135,15 @@ npm run build
 \`\`\`
 
 ## ADCE Workflow
-1. Use shaper to create appetite-bounded pitches
-2. Use architect to review feasibility and create PRPs
-3. Use builder and deployer to implement features
-4. Track progress with hill charts, not task completion
+
+### Standard Development Flow
+1. **Shape**: Use shaper to create appetite-bounded pitches from broad ideas
+2. **Architect**: Use architect to review feasibility and create PRPs
+3. **Plan**: Use planner to break PRPs into specific, dependency-aware tasks
+4. **Build**: Use builder and deployer to execute tasks systematically
+5. **Track**: Monitor progress with hill charts and task completion
+
+**Note**: For very simple features (single file, <2 hour tasks), you may skip the planner step and go directly from architect to builder/deployer.
 `;
       await fs.writeFile(claudeMd, template);
       console.log(chalk.green('   ✓ Created CLAUDE.md'));
@@ -164,7 +169,7 @@ npm run build
     console.log('2. Review the methodology:');
     console.log(chalk.cyan('   cat ADCE/examples/user-dashboard/README.md\n'));
     console.log('3. Join the community:');
-    console.log(chalk.cyan('   https://github.com/yourusername/adce-framework/discussions\n'));
+    console.log(chalk.cyan('   https://github.com/jamalcodez/adce-framework/discussions\n'));
   }
 }
 

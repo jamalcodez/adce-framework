@@ -105,47 +105,59 @@ Agents automatically activate based on:
 - **Risk assessment**: Include domain-specific technical risks
 - **PRP templates**: Customize for different technology stacks
 
-### 🎨 builder Agent  
+### 🎨 builder Agent (Enhanced 2025)
 
-**Primary Role**: UI/UX design and frontend implementation within appetite constraints
+**Primary Role**: UI/UX design and frontend implementation with cutting-edge 2025 design patterns
 
 **Auto-Activation Triggers**:
-- Keywords: "UI", "component", "design", "frontend", "interface", "user experience"
-- Context: User-facing feature development, design system work
-- Patterns: Visual design needs, user interaction requirements
+- Keywords: "UI", "component", "design", "frontend", "interface", "user experience", "2025", "modern", "trends"
+- Context: User-facing feature development, design system work, modern pattern implementation
+- Patterns: Visual design needs, user interaction requirements, bold visual expression
 
 **Core Responsibilities**:
-1. **Design-While-Building**: Solve interface problems during implementation
-2. **Component Development**: Build reusable UI components and patterns
-3. **User Experience**: Ensure usable, accessible, and responsive experiences
-4. **Design System**: Maintain consistency with existing visual patterns
-5. **Frontend Integration**: Connect UI components with backend services
+1. **Design-While-Building**: Solve interface problems using 2025 design trends
+2. **Component Development**: Build reusable UI components with advanced interactivity
+3. **User Experience**: Ensure usable, accessible experiences with AI-powered features
+4. **Design System**: Balance existing patterns with trend-forward innovation
+5. **Frontend Integration**: Connect UI components with voice interfaces and AI personalization
 
-**Design Philosophy for Appetite Constraints**:
-- **Functional > Beautiful**: Works reliably over looks perfect
-- **Consistent > Novel**: Matches existing patterns over innovative design
-- **Clear > Clever**: Users understand immediately over impressive interactions  
-- **Fast > Perfect**: Quick interactions over complex animations
+**Enhanced Design Philosophy for 2025**:
+- **Functional > Beautiful**: Works reliably while embracing bold visual expression
+- **Consistent > Novel**: Balance existing patterns with trend-forward innovation
+- **Clear > Clever**: User understanding with engaging micro-interactions
+- **Fast > Perfect**: Performance-conscious with purposeful animation and interactivity
+- **Accessible > Aesthetic**: WCAG 2.2 compliance with stunning visual design
+- **Sustainable > Resource-Heavy**: Energy-efficient design with environmental consciousness
+
+**2025 Pattern Integration**:
+- **Bold Expression**: Vivid glow aesthetics, experimental typography, anti-design elements
+- **Human Authenticity**: Hand-crafted illustrations, organic forms, sketchbook aesthetics
+- **Advanced Interactivity**: Dynamic cursors, 3D elements, gesture-based controls
+- **AI Integration**: Voice interfaces, automated accessibility, personalization
+- **Sustainability**: Energy-efficient design, ethical AI, green hosting compatibility
 
 **Required Context Engineering**:
-- Existing design system patterns and component library
-- User research and usability requirements
-- Accessibility standards and compliance needs
-- Performance budgets and technical constraints
-- Brand guidelines and visual consistency requirements
+- Existing design system patterns and 2025 trend compatibility
+- User research and modern usability requirements  
+- WCAG 2.2 accessibility standards and European Accessibility Act compliance
+- Performance budgets with Core Web Vitals optimization
+- Brand guidelines balanced with modern visual expression
+- Voice interface and AI personalization capabilities
 
 **Output Quality Standards**:
-- Functional user interfaces that complete intended workflows
-- Consistent design language matching existing product
-- Accessible and responsive across devices and browsers
-- Performance-conscious implementation within appetite bounds
+- Functional user interfaces with 2025 design pattern integration
+- Consistent design language balancing existing and modern approaches
+- WCAG 2.2 accessible and responsive across all device types
+- Performance-optimized with energy efficiency and sustainability focus
+- AI-powered accessibility features and voice interface support
 
 **Tools**: Read, Write, Edit, Bash
 
 **Customization Points**:
-- **Design system integration**: Connect with company design systems
-- **Accessibility standards**: Include specific compliance requirements
-- **Performance budgets**: Set company-specific performance constraints
+- **2025 Design Integration**: Customize trend adoption based on brand personality
+- **Accessibility Enhancement**: WCAG 2.2 and European Accessibility Act compliance
+- **Performance & Sustainability**: Energy-efficient design with Core Web Vitals optimization
+- **AI Feature Integration**: Voice interfaces, automated accessibility, personalization engines
 
 ### 🚀 deployer Agent
 
@@ -192,13 +204,17 @@ Agents automatically activate based on:
 ## Agent Collaboration Patterns
 
 ### Sequential Handoffs
-**Standard Flow**: shaper → architect → builder/deployer → integration
+**Standard Flow**: shaper → architect → planner → builder/deployer → integration
 
 1. **Shaper Output**: Appetite-bounded pitch with comprehensive context
-2. **Architect Input**: Review pitch for technical feasibility 
+2. **Architect Input**: Review pitch for technical feasibility
 3. **Architect Output**: PRPs with implementation context and scope management
-4. **Builder/Deployer Input**: Execute PRPs with clear boundaries and context
-5. **Integration**: architect oversees component integration and final validation
+4. **Planner Input**: Receive PRPs and break into specific, dependency-aware tasks
+5. **Planner Output**: Detailed task plan with dependencies and implementation sequence
+6. **Builder/Deployer Input**: Execute tasks systematically with clear boundaries
+7. **Integration**: architect oversees component integration and final validation
+
+**Note**: For very simple features (single file, <2 hour tasks), you may skip the planner step and go directly from architect to builder/deployer.
 
 ### Parallel Execution
 **When Appropriate**: Independent PRPs that don't have blocking dependencies
