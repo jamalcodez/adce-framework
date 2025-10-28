@@ -173,7 +173,7 @@ npm run build
     console.log('2. Review the methodology:');
     console.log(chalk.cyan('   cat ADCE/examples/user-dashboard/README.md\n'));
     console.log('3. Join the community:');
-    console.log(chalk.cyan('   https://github.com/yourusername/adce-framework/discussions\n'));
+    console.log(chalk.cyan('   https://github.com/jamalcodez/adce-framework/discussions\n'));
   }
 }
 

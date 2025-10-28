@@ -30,9 +30,9 @@ Example: "Use planner to break down the API PRP into specific implementation tas
 
 🎨 builder
 
-Purpose: UI/UX design and frontend implementation
-When to use: Building user interfaces, implementing designs
-Example: "Use builder to implement the dashboard components"
+Purpose: UI/UX design and frontend implementation with 2025 design patterns
+When to use: Building user interfaces, implementing designs, applying modern trends
+Example: "Use builder to implement the dashboard components with 2025 design patterns"
 
 🚀 deployer
 

@@ -20,11 +20,16 @@ ADCE combines the best of three methodologies:
 
 > **Note**: ADCE provides agents that run INSIDE Claude Code. You need Claude Code installed first.
 
-### 1. Install ADCE Agents
+### 1. Install the Framework
 
 **After npm publication** (coming soon):
 ```bash
-npx adce-framework
+# Global installation (recommended)
+npm install -g adce-framework
+adce-framework install
+
+# Or use directly
+npx adce-framework install
 ```
 
 **Current installation** (before npm publication):
@@ -46,7 +51,7 @@ cp /path/to/adce-framework/adce-framework/agents/*.md .claude/agents/
 
 See [INSTALL.md](INSTALL.md) for detailed installation instructions.
 
-### 2. Use ADCE Agents in Claude Code
+### 2. Start Your First Cycle
 ```bash
 # Create a pitch from your idea
 "Use shaper to create a pitch for: [your broad idea]"
