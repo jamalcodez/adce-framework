@@ -53,19 +53,21 @@ See [INSTALL.md](INSTALL.md) for detailed installation instructions.
 
 ### 2. Start Your First Cycle
 ```bash
-# Create a pitch from your idea
+# 1. Create a pitch from your idea
 "Use shaper to create a pitch for: [your broad idea]"
 
-# Review technical feasibility
+# 2. Review technical feasibility
 "Use architect to review this pitch for feasibility"
 
-# Break into specific tasks (for complex features)
-"Use planner to break down the API PRP into implementation tasks"
+# 3. Break into specific tasks
+"Use planner to break down the PRP into implementation tasks"
 
-# Start building
-"Use builder to implement dashboard components"
+# 4. Start building
+"Use builder to implement the first task from the plan"
 "Use deployer to set up production deployment"
 ```
+
+**Note**: For very simple features (single file, <2 hour tasks), you may skip step 3 (planner) and go directly from architect to builder/deployer.
 
 ## Why ADCE Works
 

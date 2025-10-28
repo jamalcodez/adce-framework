@@ -204,13 +204,17 @@ Agents automatically activate based on:
 ## Agent Collaboration Patterns
 
 ### Sequential Handoffs
-**Standard Flow**: shaper → architect → builder/deployer → integration
+**Standard Flow**: shaper → architect → planner → builder/deployer → integration
 
 1. **Shaper Output**: Appetite-bounded pitch with comprehensive context
-2. **Architect Input**: Review pitch for technical feasibility 
+2. **Architect Input**: Review pitch for technical feasibility
 3. **Architect Output**: PRPs with implementation context and scope management
-4. **Builder/Deployer Input**: Execute PRPs with clear boundaries and context
-5. **Integration**: architect oversees component integration and final validation
+4. **Planner Input**: Receive PRPs and break into specific, dependency-aware tasks
+5. **Planner Output**: Detailed task plan with dependencies and implementation sequence
+6. **Builder/Deployer Input**: Execute tasks systematically with clear boundaries
+7. **Integration**: architect oversees component integration and final validation
+
+**Note**: For very simple features (single file, <2 hour tasks), you may skip the planner step and go directly from architect to builder/deployer.
 
 ### Parallel Execution
 **When Appropriate**: Independent PRPs that don't have blocking dependencies

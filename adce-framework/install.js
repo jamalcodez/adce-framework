@@ -136,18 +136,14 @@ npm run build
 
 ## ADCE Workflow
 
-### Standard Flow (Simple Features)
-1. Use shaper to create appetite-bounded pitches
-2. Use architect to review feasibility and create PRPs
-3. Use builder and deployer to implement features
-4. Track progress with hill charts
+### Standard Development Flow
+1. **Shape**: Use shaper to create appetite-bounded pitches from broad ideas
+2. **Architect**: Use architect to review feasibility and create PRPs
+3. **Plan**: Use planner to break PRPs into specific, dependency-aware tasks
+4. **Build**: Use builder and deployer to execute tasks systematically
+5. **Track**: Monitor progress with hill charts and task completion
 
-### Extended Flow (Complex Features)
-1. Use shaper to create appetite-bounded pitches
-2. Use architect to review feasibility and create PRPs
-3. Use planner to break PRPs into specific tasks (optional)
-4. Use builder and deployer to execute tasks
-5. Track progress with task completion
+**Note**: For very simple features (single file, <2 hour tasks), you may skip the planner step and go directly from architect to builder/deployer.
 `;
       await fs.writeFile(claudeMd, template);
       console.log(chalk.green('   ✓ Created CLAUDE.md'));

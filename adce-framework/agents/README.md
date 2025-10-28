@@ -42,20 +42,15 @@ Example: "Use deployer to set up staging environment"
 
 ## Usage Workflow
 
-### Standard Flow (Simple Features)
-1. **Shaping**: shaper creates appetite-bounded pitch
+### Standard Development Flow
+1. **Shaping**: shaper creates appetite-bounded pitch from broad ideas
 2. **Architecture**: architect reviews feasibility and creates PRPs
-3. **Building**: builder and deployer implement features
-4. **Integration**: architect manages integration and scope decisions
-5. **Deployment**: deployer gets features to production
-
-### Extended Flow (Complex Features)
-1. **Shaping**: shaper creates appetite-bounded pitch
-2. **Architecture**: architect reviews feasibility and creates PRPs
-3. **Planning**: planner breaks PRPs into specific, dependency-aware tasks (NEW)
+3. **Planning**: planner breaks PRPs into specific, dependency-aware tasks
 4. **Building**: builder and deployer execute tasks systematically
 5. **Integration**: architect manages integration and scope decisions
 6. **Deployment**: deployer gets features to production
+
+**Note**: For very simple features (single file, <2 hour tasks), you may skip the planner step and go directly from architect to builder/deployer.
 
 ## Agent Configuration
 Each agent includes:
